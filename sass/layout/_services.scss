@@ -1,0 +1,40 @@
+.services {
+  padding-top: 4.375rem;
+}
+.services__container {
+}
+.services__title {
+  margin-bottom: 2.187rem;
+}
+
+.services__text {
+  font-size: 1.25rem;
+  margin-bottom: 2.187rem;
+  color: var(--sub-title);
+  text-transform: uppercase;
+}
+.list__services-image {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: currentColor;
+}
+
+.list {
+}
+.list__item {
+}
+.list__item-after {
+  &::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border: 1px solid #f3ffce;
+    transform: rotate(180deg);
+    margin-top: 1.25rem;
+  }
+}
+.list__numbers {
+}
+.list__text {
+}

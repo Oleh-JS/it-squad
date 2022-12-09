@@ -14,5 +14,11 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M12.15 25.778h2.341l3.225-16.578h6.19l0.39-2.089h-14.721l-0.39 2.089h6.19l-3.225 16.578z"></path>
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M4.962 7.111l-3.777 18.667h2.445l3.777-18.667h-2.445z"></path>
 </symbol>
+
+<symbol id="icon-btn" viewBox="0 0 32 32">
+<path stroke="#DF08C9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M1.568 29.841l28.776-28.776"></path>
+<path stroke="#DF08C9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M2.752 0.806h28.174"></path>
+<path stroke="#DF08C9" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M30.134 29.78v-28.174"></path>
+</symbol>
 </defs>
 </svg>
