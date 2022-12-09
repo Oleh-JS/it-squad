@@ -5,11 +5,80 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>IT SQUAD</title>
+        <link rel="stylesheet" href="./css/main.min.css">
     </head>
 
     <body>
+        <header class="header">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="index.html" class="header__logo">
+                                <svg class="header__logo-image">
+                                    <use href="./images/icons.svg#icon-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <svg class="header__btn-menu-open">
+                                <use href="./images/icons.svg#icon-menu-open"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
 
+            <!-- ___________________HEROIS___________________ -->
+            <section class="heroise">
+                <div class="heroise__container">
+                    <h1 class="heroise__title title">IT Squad</h1>
+                    <h2 class="heroise__sub-title">Development <span class="heroise__accents-text">of a full
+                            cycle</span>
+                        turnkey online stores</h2>
+                    <picture class="heroise_wrapper-img">
+                        <source
+                            srcset="./images/picture/heroise/heroise.webp 1x, ./images/picture/heroise/heroise@2x.webp x2, ./images/picture/heroise/heroise@3x.webp 3x"
+                            type="image/webp" media="(max-width: 767px)">
+                        <source
+                            srcset="./images/picture/heroise/heroise-min.jpg 1x, ./images/picture/heroise/heroise@2x-min.jpg x2, ./images/picture/heroise/heroise@3x-min.jpg 3x"
+                            media="(max-width: 767px)">
+                        <img src="./images/picture/heroise/heroise-min.jpg" alt="айтишник за работой"
+                            class="heroise__img">
+                    </picture>
+                    <button class="btn">Work with us</button>
+                </div>
+            </section>
+
+            <!-- _______________ABOUT______________ -->
+            <section class="about">
+                <div class="about__container">
+                    <h2 class="about__title title">ABOUT</h2>
+                    <p class="about__sub-title">IT SQUAD is a digital agency, specialize in front-end development
+                        of online stores
+                        on the Shopify platform.</p>
+                    <div class="about__wrapper-img">
+
+                    </div>
+                    <p class="about__text">We specialize in front-end development
+                        of online stores on the Shopify platform. Focused on digitally transforming brands.
+                        We help businesses launch, grow and gain a competitive edge in today’s
+                        digital-led world through strategy and tech. Our mission is to create remarkable digital
+                        experiences that connect brands
+                        to their customers.</p>
+                    <div class="about__wrapper-img-2">
+
+                    </div>
+                    <p class="about_text-gray">Based in Ukraine.
+                        10% of each project we donate
+                        for Ukraine.</p>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
     </body>
 
 </html>

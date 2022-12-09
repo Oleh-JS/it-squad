@@ -1,0 +1,32 @@
+.heroise {
+  padding-top: 2.813rem;
+}
+.heroise__container {
+}
+.heroise__title {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 3.75rem;
+  margin-bottom: 1.875rem;
+}
+
+.heroise__sub-title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 4.375rem;
+}
+.heroise__accents-text {
+  color: var(--accent-color);
+  font-style: italic;
+}
+.heroise_wrapper-img {
+}
+.heroise__img {
+  object-fit: cover;
+  outline: 4px solid var(--background-color);
+  outline-offset: -4px;
+  margin-bottom: 2.5rem;
+}
+.btn {
+}

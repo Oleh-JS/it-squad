@@ -1,8 +1,11 @@
 // abstracts
-
+@import "./abstracts/variables";
 // base
 @import "./base/modern-normalize";
 @import "./base/reset";
 // components
-
+@import "./components/components";
 // layout
+@import "./layout/header";
+@import "./layout/herois";
+@import "./layout/about";

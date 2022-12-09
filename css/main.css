@@ -1,3 +1,41 @@
+:root {
+  --background-color: #202020;
+  --accent-color: #bfe55e;
+  --sub-title: #cbcbcb;
+  --text: #ffffff;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-Regular.woff), url(../fonts/Inter-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-SemiBold.woff), url(../fonts/Inter-SemiBold.woff2);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Light.woff), url(../fonts/OpenSans-Light.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Medium.woff), url(../fonts/OpenSans-Medium.woff2);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-MediumItalic.woff), url(../fonts/OpenSans-MediumItalic.woff2);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/OpenSans-Regular.woff), url(../fonts/OpenSans-Regular.woff2);
+  font-weight: 400;
+}
 /**
  * Minified by jsDelivr using clean-css v4.2.3.
  * Original file: /npm/modern-normalize@1.1.0/modern-normalize.css
@@ -174,4 +212,168 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+[class$=__container] {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.title {
+  font-family: "OpenSans", sans-serif;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.btn {
+  padding: 0.562rem 0.781rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  background-color: var(--background-color);
+  color: var(--text);
+  font-size: 1.125rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header__wrapper {
+  padding-top: 25px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo-image {
+  width: 7.25rem;
+  height: 2.25rem;
+}
+
+.header__btn-menu-open {
+  width: 1.5rem;
+  height: 2.25rem;
+  fill: #04c065;
+}
+.header__btn-menu-open > use {
+  fill: #04c065;
+}
+
+.heroise {
+  padding-top: 2.813rem;
+}
+
+.heroise__title {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 3.75rem;
+  margin-bottom: 1.875rem;
+}
+
+.heroise__sub-title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 4.375rem;
+}
+
+.heroise__accents-text {
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.heroise__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: 4px solid var(--background-color);
+  outline-offset: -4px;
+  margin-bottom: 2.5rem;
+}
+
+.about {
+  padding-top: 5.312rem;
+}
+
+.about__title {
+  margin-bottom: 2.187rem;
+}
+
+.about__sub-title {
+  font-family: "OpenSans", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: var(--sub-title);
+  margin-bottom: 2.187rem;
+}
+
+.about__wrapper-img {
+  outline: 4px solid var(--background-color);
+  outline-offset: -4px;
+  margin: 0 auto 2.187rem;
+  width: 89.744vw;
+  padding-top: calc(89.744vw - 18.57%);
+  background-color: #0e0c0c;
+  background-image: linear-gradient(29.58deg, rgba(191, 229, 95, 0.1) 22.75%, rgba(217, 217, 217, 0) 64%), url(../images/picture/about/about.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__wrapper-img {
+    background-image: linear-gradient(29.58deg, rgba(191, 229, 95, 0.1) 22.75%, rgba(217, 217, 217, 0) 64%), url(../images/picture/about/about@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .about__wrapper-img {
+    background-image: linear-gradient(29.58deg, rgba(191, 229, 95, 0.1) 22.75%, rgba(217, 217, 217, 0) 64%), url(../images/picture/about/about@3x.jpg);
+  }
+}
+.about__wrapper-img-2 {
+  outline: 4px solid var(--background-color);
+  outline-offset: -4px;
+  margin: 0 auto 2.187rem;
+  width: 89.744vw;
+  padding-top: calc(89.744vw - 24.29%);
+  background-color: #0e0c0c;
+  background-image: linear-gradient(29.58deg, rgba(191, 229, 95, 0.1) 22.75%, rgba(217, 217, 217, 0) 64%), url(../images/picture/about/about-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__wrapper-img-2 {
+    background-image: linear-gradient(29.58deg, rgba(191, 229, 95, 0.1) 22.75%, rgba(217, 217, 217, 0) 64%), url(../images/picture/about/about-2@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .about__wrapper-img-2 {
+    background-image: linear-gradient(29.58deg, rgba(191, 229, 95, 0.1) 22.75%, rgba(217, 217, 217, 0) 64%), url(../images/picture/about/about-2@3x.jpg);
+  }
+}
+.about__text {
+  font-size: 1.25rem;
+  margin-bottom: 2.187rem;
+}
+
+.about_text-gray {
+  color: var(--sub-title);
 }/*# sourceMappingURL=main.css.map */
