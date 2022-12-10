@@ -400,7 +400,7 @@ body {
   text-transform: uppercase;
   font-size: 1.875rem;
   color: var(--sub-title);
-  margin-bottom: 2.187rem;
+  margin-bottom: 1.1rem;
 }
 .advantages__text::after {
   display: block;
@@ -413,6 +413,20 @@ body {
   margin-top: 2.187rem;
 }
 
+.list__numbers {
+  font-size: 1.25rem;
+  color: var(--sub-title);
+  margin-bottom: 0.375rem;
+}
+
+.list__text {
+  margin-bottom: 0.625rem;
+  font-size: 1.25rem;
+  width: 82.29%;
+  margin-right: 8.855%;
+  margin-left: 8.855%;
+}
+
 .list__advantages-item:last-child::after {
   display: block;
   content: "";
@@ -421,21 +435,9 @@ body {
   border: 1px solid #f3ffce;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-top: 1.25rem;
 }
-
-.list__numbers {
-  font-size: 1.25rem;
-  color: var(--sub-title);
-  margin-bottom: 0.625rem;
-}
-
-.list__text {
+.list__advantages-item:last-child > .list__text {
   margin-bottom: 1.25rem;
-  font-size: 1.25rem;
-  width: 82.29%;
-  margin-right: 8.855%;
-  margin-left: 8.855%;
 }
 
 .numbers {
@@ -499,11 +501,50 @@ body {
 }
 
 .list__services-image {
+  position: absolute;
+  right: 0;
+  bottom: 2.187rem;
   width: 1.125rem;
   height: 1.125rem;
-  fill: currentColor;
+  stroke: var(--sub-title);
 }
 
+.list__item-relative {
+  position: relative;
+}
+
+.list__item-after {
+  margin-bottom: 1.125rem;
+}
+.list__item-after:nth-child(2)::before {
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  min-height: 80px;
+  background-image: linear-gradient(146.53deg, rgba(191, 229, 95, 0.015) 36.82%, rgba(255, 255, 255, 0) 80.1%), url(../../images/picture/services/Rectangle-37-min.png);
+  background-size: 6.562rem 5rem;
+  background-repeat: no-repeat;
+  background-position: 68% 0;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+.list__item-after:last-child {
+  margin-bottom: 0;
+}
+.list__item-after:last-child::before {
+  z-index: -1;
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  min-height: 80px;
+  background-image: linear-gradient(146.53deg, rgba(191, 229, 95, 0.015) 36.82%, rgba(255, 255, 255, 0) 80.1%), url(../../images/picture/services/Rectangle-38-min.png);
+  background-size: 6.562rem 5rem;
+  background-repeat: no-repeat;
+  background-position: 83% 0;
+}
 .list__item-after::after {
   display: block;
   content: "";
@@ -512,5 +553,68 @@ body {
   border: 1px solid #f3ffce;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-top: 1.25rem;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .list__item-after:nth-child(2)::before {
+    background-image: linear-gradient(146.53deg, rgba(191, 229, 95, 0.015) 36.82%, rgba(255, 255, 255, 0) 80.1%), url(../../images/picture/services/Rectangle-37@2x-min.png);
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .list__item-after:nth-child(2)::before {
+    background-image: linear-gradient(146.53deg, rgba(191, 229, 95, 0.015) 36.82%, rgba(255, 255, 255, 0) 80.1%), url(../../images/picture/services/Rectangle-37@3x-min.png);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .list__item-after:last-child::before {
+    background-image: linear-gradient(146.53deg, rgba(191, 229, 95, 0.015) 36.82%, rgba(255, 255, 255, 0) 80.1%), url(../../images/picture/services/Rectangle-38@2x-min.png);
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .list__item-after:last-child::before {
+    background-image: linear-gradient(146.53deg, rgba(191, 229, 95, 0.015) 36.82%, rgba(255, 255, 255, 0) 80.1%), url(../../images/picture/services/Rectangle-38@3x-min.png);
+  }
+}
+.work {
+  padding-top: 4.375rem;
+}
+
+.work__title {
+  margin-bottom: 2.187rem;
+}
+
+.work__subtitle {
+  margin-bottom: 2.187rem;
+  font-size: 1.25rem;
+  color: var(--sub-title);
+  text-transform: uppercase;
+}
+
+.work__item::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border: 1px solid #f3ffce;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 0.625rem;
+}
+.work__item:last-child::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border: 1px solid #f3ffce;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 0;
+}
+
+.team {
+  padding-top: 4.375rem;
+}
+
+.team__title {
+  margin-bottom: 2.187rem;
 }/*# sourceMappingURL=main.css.map */

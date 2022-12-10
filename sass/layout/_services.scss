@@ -14,16 +14,74 @@
   text-transform: uppercase;
 }
 .list__services-image {
+  position: absolute;
+  right: 0;
+  bottom: 2.187rem;
   width: 1.125rem;
   height: 1.125rem;
-  fill: currentColor;
+  stroke: var(--sub-title);
 }
 
+.list__item-relative {
+  position: relative;
+}
 .list {
 }
+.list__services {
+}
+
 .list__item {
 }
+
+.list__wrapper-background {
+}
+
 .list__item-after {
+  margin-bottom: 1.125rem;
+
+  &:nth-child(2)::before {
+    z-index: -1;
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    min-height: 80px;
+
+    background-image: linear-gradient(
+        146.53deg,
+        rgba(191, 229, 95, 0.015) 36.82%,
+        rgba(255, 255, 255, 0) 80.1%
+      ),
+      url(../../images/picture/services/Rectangle-37-min.png);
+    background-size: 6.562rem 5rem;
+    background-repeat: no-repeat;
+    background-position: 68% 0;
+    transform: rotate(2deg);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child::before {
+    z-index: -1;
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    min-height: 80px;
+
+    background-image: linear-gradient(
+        146.53deg,
+        rgba(191, 229, 95, 0.015) 36.82%,
+        rgba(255, 255, 255, 0) 80.1%
+      ),
+      url(../../images/picture/services/Rectangle-38-min.png);
+    background-size: 6.562rem 5rem;
+    background-repeat: no-repeat;
+    background-position: 83% 0;
+  }
+
   &::after {
     display: block;
     content: "";
@@ -31,9 +89,63 @@
     height: 1px;
     border: 1px solid #f3ffce;
     transform: rotate(180deg);
-    margin-top: 1.25rem;
   }
 }
+
+// ___________________________image 37______________________
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .list__item-after:nth-child(2)::before {
+    background-image: linear-gradient(
+        146.53deg,
+        rgba(191, 229, 95, 0.015) 36.82%,
+        rgba(255, 255, 255, 0) 80.1%
+      ),
+      url(../../images/picture/services/Rectangle-37@2x-min.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .list__item-after:nth-child(2)::before {
+    background-image: linear-gradient(
+        146.53deg,
+        rgba(191, 229, 95, 0.015) 36.82%,
+        rgba(255, 255, 255, 0) 80.1%
+      ),
+      url(../../images/picture/services/Rectangle-37@3x-min.png);
+  }
+}
+
+// __________________________-image 38________________________________
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .list__item-after:last-child::before {
+    background-image: linear-gradient(
+        146.53deg,
+        rgba(191, 229, 95, 0.015) 36.82%,
+        rgba(255, 255, 255, 0) 80.1%
+      ),
+      url(../../images/picture/services/Rectangle-38@2x-min.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+  .list__item-after:last-child::before {
+    background-image: linear-gradient(
+        146.53deg,
+        rgba(191, 229, 95, 0.015) 36.82%,
+        rgba(255, 255, 255, 0) 80.1%
+      ),
+      url(../../images/picture/services/Rectangle-38@3x-min.png);
+  }
+}
+
 .list__numbers {
 }
 .list__text {
