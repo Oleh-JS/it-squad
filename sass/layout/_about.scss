@@ -16,8 +16,6 @@
 }
 
 .about__wrapper-img {
-  outline: 4px solid var(--background-color);
-  outline-offset: -4px;
   margin: 0 auto 2.187rem;
   width: 89.744vw;
   padding-top: calc(89.744vw - 18.57%);
@@ -31,6 +29,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.95));
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -60,11 +59,10 @@
 }
 
 .about__wrapper-img-2 {
-  outline: 4px solid var(--background-color);
-  outline-offset: -4px;
   margin: 0 auto 2.187rem;
   width: 89.744vw;
   padding-top: calc(89.744vw - 24.29%);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.95));
   background-color: #0e0c0c;
   background-image: linear-gradient(
       29.58deg,
