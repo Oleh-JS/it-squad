@@ -22,11 +22,44 @@
                             </a>
                         </li>
                         <li class="header__item">
-                            <svg class="header__btn-menu-open">
-                                <use href="./images/icons.svg#icon-menu-open"></use>
-                            </svg>
+                            <button class="header__btn-mobile-menu js-open-menu">
+                                <svg class="header__btn-menu-open">
+                                    <use href="./images/icons.svg#icon-menu-open"></use>
+                                </svg>
+                            </button>
                         </li>
                     </ul>
+                    <div class="header-mobile__menu js-menu-container">
+                        <div class="header-mobile__container">
+                            <button class="header-mobile__btn-close js-close-menu">
+                                <svg class="header-mobile__img">
+                                    <use href="./images/icons.svg#icon-btn-close"></use>
+                                </svg>
+                            </button>
+                            <h2 class="header-mobile__title">IT Squad</h2>
+                            <ul class="header-mobile__list">
+                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">Home</a></li>
+                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">ABOUT</a></li>
+                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">Services</a>
+                                </li>
+                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">PROJECTS</a>
+                                </li>
+                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">CONTaCTS</a>
+                                </li>
+                            </ul>
+                            <ul class="header-mobile__list-social">
+                                <li class="header-mobile__item-social"><a href="#"
+                                        class="header-mobile__link-social">Facebook</a>
+                                </li>
+                                <li class="header-mobile__item-social"><a href="#"
+                                        class="header-mobile__link-social">Upwork</a>
+                                </li>
+                                <li class="header-mobile__item-social"><a href="#"
+                                        class="header-mobile__link-social">Calendly</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -449,6 +482,7 @@
                 </a>
             </div>
         </footer>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 
 </html>

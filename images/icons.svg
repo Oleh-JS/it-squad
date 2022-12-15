@@ -20,5 +20,9 @@
 <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M2.752 0.806h28.174"></path>
 <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M30.134 29.78v-28.174"></path>
 </symbol>
+
+<symbol id="icon-btn-close" viewBox="0 0 32 32">
+<path d="M14.84 15.76l-7.484 7.414 1.174 1.174 7.41-7.487 7.080 7.083 1.027-1.028-7.117-7.046 7.484-7.413-1.174-1.174-7.41 7.487-7.044-7.12-1.027 1.028 7.080 7.083z"></path>
+</symbol>
 </defs>
 </svg>

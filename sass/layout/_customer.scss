@@ -1,26 +1,21 @@
 .customers {
   padding-top: 4.375rem;
 }
-.customers__container {
-}
+
 .customers__title {
   margin-bottom: 2.187rem;
 }
-.title {
-}
+
 .customers__sub-title {
   margin-bottom: 2.187rem;
   font-size: 1.25rem;
   color: var(--sub-title);
   text-transform: uppercase;
 }
-.customers__list {
-}
+
 .customers__item {
   position: relative;
   &::after {
-    // margin-top: 1.25rem;
-    // margin-bottom: 1.25rem;
     display: block;
     content: "";
     width: 100%;
@@ -30,7 +25,6 @@
   }
 
   &:first-child::before {
-    // margin-bottom: 1.25rem;
     display: block;
     content: "";
     width: 100%;
