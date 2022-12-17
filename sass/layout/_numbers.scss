@@ -40,3 +40,58 @@
   color: var(--sub-title);
   font-size: 1.25rem;
 }
+
+@media screen and (min-width: 767.98px) {
+  .numbers__list {
+    display: flex;
+    // align-items: baseline;
+    column-gap: 6.25rem;
+    row-gap: 4.375rem;
+    flex-wrap: wrap;
+    text-align: end;
+  }
+
+  .numbers__item {
+    flex: 1 1 calc((100% - 6.25rem) / 2);
+    &:last-child {
+      text-align: start;
+    }
+
+    &:nth-child(1) {
+      order: -2;
+    }
+
+    &:nth-child(3) {
+      order: -1;
+      text-align: start;
+    }
+  }
+
+  .numbers__text-numbers {
+    font-size: 1.7rem;
+    margin-bottom: 1.25rem;
+  }
+  .numbers__text {
+    color: var(--sub-title);
+    font-size: 1.475rem;
+  }
+
+  .numbers__item {
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #f3ffce;
+    &::after {
+      display: none;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  .numbers__wrapper-text {
+    margin-left: 0;
+  }
+
+  .numbers {
+    padding-top: 10rem;
+  }
+}

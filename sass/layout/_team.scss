@@ -1,14 +1,9 @@
 .team {
   padding-top: 4.375rem;
 }
-.team__container {
-}
+
 .team__title {
   margin-bottom: 2.187rem;
-}
-.title {
-}
-.team__image {
 }
 
 .team__image-wrapper {
@@ -41,4 +36,33 @@
 }
 .team__text {
   font-size: 1.25rem;
+}
+
+@media screen and (min-width: 767.98px) {
+  .team {
+    padding-top: 10rem;
+  }
+
+  .team__title {
+    margin-bottom: 4.375rem;
+  }
+
+  // .team__image {
+  //   width: 64.032%;
+  // }
+
+  .team__wrapper {
+    max-width: 64.032%;
+  }
+
+  .team__wrapper-main {
+    display: flex;
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .team__wrapper-main {
+    column-gap: 6.25rem;
+  }
 }

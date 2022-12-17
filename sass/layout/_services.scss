@@ -18,20 +18,16 @@
   width: 1.125rem;
   height: 1.125rem;
   stroke: var(--sub-title);
+  // transform: translate(0, -50%);
 }
 
 .list__item-relative {
   position: relative;
 }
-.list {
-}
+
 .list__services {
-}
-
-.list__item {
-}
-
-.list__wrapper-background {
+  border-top: 1px solid #f3ffce;
+  padding-top: 1.25rem;
 }
 
 .list__item-after {
@@ -85,7 +81,7 @@
     content: "";
     width: 100%;
     height: 1px;
-    border: 1px solid #f3ffce;
+    border: 0.5px solid #f3ffce;
     transform: rotate(180deg);
   }
 }
@@ -106,7 +102,8 @@
 
 @media (min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
+  (min-resolution: 3dppx),
+  (min-width: 767.98px) {
   .list__item-after:nth-child(2)::before {
     background-image: linear-gradient(
         146.53deg,
@@ -133,7 +130,8 @@
 
 @media (min-device-pixel-ratio: 3),
   (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
+  (min-resolution: 3dppx),
+  (min-width: 767.98px) {
   .list__item-after:last-child::before {
     background-image: linear-gradient(
         146.53deg,
@@ -144,7 +142,51 @@
   }
 }
 
-.list__numbers {
-}
-.list__text {
+@media screen and (min-width: 767.98px) {
+  .services {
+    padding-top: 10rem;
+  }
+
+  .services__wrapper {
+    display: flex;
+    column-gap: 6.25rem;
+    margin-bottom: 4.375rem;
+  }
+
+  .services__title {
+    flex: 1 1 calc((100% - 6.25rem) / 2);
+  }
+
+  .services__text {
+    flex: 1 1 calc((100% - 6.25rem) / 2);
+  }
+
+  .list__services-image {
+    width: 2.875rem;
+    height: 2.875rem;
+    right: 0;
+    bottom: 0;
+    transform: translate(0, -50%);
+  }
+
+  .list__item-after {
+    &:nth-child(2)::before {
+      top: 0;
+      right: 0;
+      transform: translate(0, -32.156%);
+      min-height: 167px;
+      background-size: 231px 167px;
+      background-position: 68% 0px;
+    }
+
+    &:last-child::before {
+      top: 0;
+      right: 0;
+      transform: translate(0, -32.156%);
+      width: 100%;
+      min-height: 167px;
+      background-size: 231px 167px;
+      background-position: 83% 0;
+    }
+  }
 }

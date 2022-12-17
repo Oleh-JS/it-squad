@@ -8,8 +8,7 @@
 .footer_title {
   margin-bottom: 2.187rem;
 }
-.title {
-}
+
 .footer__sub-title {
   margin-bottom: 2.187rem;
   font-size: 1.25rem;
@@ -48,4 +47,31 @@
 
 .footer__button-top {
   text-decoration: none;
+}
+
+@media screen and (min-width: 767.98px) {
+  .footer_wrapper-title {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6.25rem;
+  }
+
+  .footer_title {
+    flex: 1 1 calc((100% - 6.25rem) / 2);
+  }
+
+  .footer__sub-title {
+    flex: 1 1 calc((100% - 6.25rem) / 2);
+    font-size: 2rem;
+  }
+
+  .footer__list {
+    display: flex;
+    max-width: auto;
+    column-gap: 7.625rem;
+  }
+  .footer__item {
+    flex: 0 1 calc((100% - 40.875rem) / 4);
+    min-width: 167px;
+  }
 }
