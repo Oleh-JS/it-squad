@@ -1,9 +1,9 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-menu-open" viewBox="0 0 38 32">
-<path style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.9" d="M0.628 0.941h35.765"></path>
-<path style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.9" d="M0.628 31.059h35.765"></path>
-<path style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" stroke-width="1.9" d="M0.628 16h35.765"></path>
+<path style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="1" stroke-width="1.9" d="M0.628 0.141h35.765"></path>
+<path style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="1" stroke-width="1.9" d="M0.628 30.059h35.765"></path>
+<path style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="1" stroke-width="1.9" d="M0.628 15h35.765"></path>
 </symbol>
 <symbol id="icon-logo" viewBox="0 0 104 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M40.331 14.878c-2.793-0.684-4.842-1.027-4.842-3.527 0-1.553 1.437-2.579 4.124-2.579 3.006 0 4.443 1.316 4.789 3.843h2.394c-0.319-3.895-3.139-5.948-7.183-5.948-4.203 0-6.518 1.974-6.518 4.948 0 3.659 3.405 4.632 6.252 5.29 4.257 0.974 5.667 1.448 5.667 4.027 0 1.684-1.171 3.185-4.469 3.185-3.991 0-5.587-2-5.853-4.58h-2.394c0.266 4.316 3.751 6.685 8.247 6.685 4.815 0 6.864-2.553 6.864-5.29 0-4.29-2.793-5.001-7.077-6.054z"></path>

@@ -32,3 +32,21 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767.98px) {
+  [class$="__container"] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  [class$="__container"] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

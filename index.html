@@ -9,26 +9,43 @@
         <link rel="stylesheet" href="./css/main.min.css">
     </head>
 
-    <body>
+    <body class="body">
         <header class="header" id="top">
             <div class="header__container">
                 <div class="header__wrapper">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="index.html" class="header__logo">
-                                <svg class="header__logo-image">
-                                    <use href="./images/icons.svg#icon-logo"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="header__item">
-                            <button class="header__btn-mobile-menu js-open-menu">
-                                <svg class="header__btn-menu-open">
-                                    <use href="./images/icons.svg#icon-menu-open"></use>
-                                </svg>
-                            </button>
-                        </li>
-                    </ul>
+                    <div class="header__wrapper-desktop">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="index.html" class="header__logo">
+                                    <svg class="header__logo-image">
+                                        <use href="./images/icons.svg#icon-logo"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <button class="header__btn-mobile-menu js-open-menu">
+                                    <svg class="header__btn-menu-open">
+                                        <use href="./images/icons.svg#icon-menu-open"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <nav class="header__menu">
+                            <ul class="header__list-menu">
+                                <li class="header__item-menu btn"><a href="#" class="header__link-menu link">ABOUT</a>
+                                </li>
+                                <li class="header__item-menu btn"><a href="#"
+                                        class="header__link-menu link">Services</a>
+                                </li>
+                                <li class="header__item-menu btn"><a href="#"
+                                        class="header__link-menu link">PROJECTS</a>
+                                </li>
+                                <li class="header__item-menu btn"><a href="#"
+                                        class="header__link-menu link">CONTaCTS</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <div class="header-mobile__menu js-menu-container">
                         <div class="header-mobile__container">
                             <button class="header-mobile__btn-close js-close-menu">
@@ -38,24 +55,29 @@
                             </button>
                             <h2 class="header-mobile__title">IT Squad</h2>
                             <ul class="header-mobile__list">
-                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">Home</a></li>
-                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">ABOUT</a></li>
-                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">Services</a>
+                                <li class="header-mobile__item"><a href="#" class="header-mobile__link link">Home</a>
                                 </li>
-                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">PROJECTS</a>
+                                <li class="header-mobile__item"><a href="#" class="header-mobile__link link">ABOUT</a>
                                 </li>
-                                <li class="header-mobile__item"><a href="#" class="header-mobile__link">CONTaCTS</a>
+                                <li class="header-mobile__item"><a href="#"
+                                        class="header-mobile__link link">Services</a>
+                                </li>
+                                <li class="header-mobile__item"><a href="#"
+                                        class="header-mobile__link link">PROJECTS</a>
+                                </li>
+                                <li class="header-mobile__item"><a href="./form.html"
+                                        class="header-mobile__link link">CONTaCTS</a>
                                 </li>
                             </ul>
                             <ul class="header-mobile__list-social">
                                 <li class="header-mobile__item-social"><a href="#"
-                                        class="header-mobile__link-social">Facebook</a>
+                                        class="header-mobile__link-social link">Facebook</a>
                                 </li>
                                 <li class="header-mobile__item-social"><a href="#"
-                                        class="header-mobile__link-social">Upwork</a>
+                                        class="header-mobile__link-social link">Upwork</a>
                                 </li>
                                 <li class="header-mobile__item-social"><a href="#"
-                                        class="header-mobile__link-social">Calendly</a>
+                                        class="header-mobile__link-social link">Calendly</a>
                                 </li>
                             </ul>
                         </div>
@@ -68,11 +90,21 @@
             <!-- ___________________HEROIS___________________ -->
             <section class="heroise">
                 <div class="heroise__container">
-                    <h1 class="heroise__title title">IT Squad</h1>
-                    <h2 class="heroise__sub-title">Development <span class="heroise__accents-text">of a full
-                            cycle</span>
-                        turnkey online stores</h2>
+                    <div class="heroise__wrapper">
+                        <h1 class="heroise__title title">IT Squad</h1>
+                        <h2 class="heroise__sub-title">Development <span class="heroise__accents-text">of a full
+                                cycle</span>
+                            turnkey online stores</h2>
+                    </div>
                     <picture class="heroise_wrapper-img">
+                        <source
+                            srcset="./images/picture/heroise/herois-desktop.webp 1x, ./images/picture/heroise/herois-desktop@2x.webp x2, ./images/picture/heroise/herois-desktop@3x.webp 3x"
+                            type="image/webp" media="(min-width: 768px)">
+                        <source
+                            srcset="./images/picture/heroise/herois-desktop.jpg 1x, ./images/picture/heroise/herois-desktop@2x-min.jpg x2, ./images/picture/heroise/herois-desktop@3x-min.jpg 3x"
+                            media="(min-width: 768px)">
+
+                        <!-- ___________________mobail picture____________ -->
                         <source
                             srcset="./images/picture/heroise/heroise.webp 1x, ./images/picture/heroise/heroise@2x.webp x2, ./images/picture/heroise/heroise@3x.webp 3x"
                             type="image/webp" media="(max-width: 767px)">
@@ -82,32 +114,41 @@
                         <img src="./images/picture/heroise/heroise-min.jpg" alt="айтишник за работой"
                             class="heroise__img">
                     </picture>
-                    <button class="btn">Work with us</button>
+                    <div class="heroise__wrapper-btn">
+                        <a class="link btn heroise__btn" href="./form.html">Work with us</a>
+                    </div>
+                    <svg class="heroise__icon">
+                        <use href="./images/icons.svg#icon-btn"></use>
+                    </svg>
                 </div>
             </section>
 
             <!-- _______________ABOUT______________ -->
             <section class="about">
-                <div class="about__container">
-                    <h2 class="about__title title">ABOUT</h2>
-                    <p class="about__sub-title">IT SQUAD is a digital agency, specialize in front-end development
-                        of online stores
-                        on the Shopify platform.</p>
-                    <div class="about__wrapper-img">
+                <div class="about__wraper about__container">
+                    <div class="about__wrapper-left">
+                        <h2 class="about__title title">ABOUT</h2>
+                        <p class="about__sub-title">IT SQUAD is a digital agency, specialize in front-end development
+                            of online stores
+                            on the Shopify platform.</p>
+                        <div class="about__wrapper-img">
 
+                        </div>
                     </div>
-                    <p class="about__text">We specialize in front-end development
-                        of online stores on the Shopify platform. Focused on digitally transforming brands.
-                        We help businesses launch, grow and gain a competitive edge in today’s
-                        digital-led world through strategy and tech. Our mission is to create remarkable digital
-                        experiences that connect brands
-                        to their customers.</p>
-                    <div class="about__wrapper-img-2">
+                    <div class="about__wrapper-right">
+                        <p class="about__text">We specialize in front-end development
+                            of online stores on the Shopify platform. Focused on digitally transforming brands.
+                            We help businesses launch, grow and gain a competitive edge in today’s
+                            digital-led world through strategy and tech. Our mission is to create remarkable digital
+                            experiences that connect brands
+                            to their customers.</p>
+                        <div class="about__wrapper-img-2">
 
+                        </div>
+                        <p class="about_text-gray">Based in Ukraine.
+                            10% of each project we donate
+                            for Ukraine.</p>
                     </div>
-                    <p class="about_text-gray">Based in Ukraine.
-                        10% of each project we donate
-                        for Ukraine.</p>
                 </div>
             </section>
 
@@ -482,6 +523,9 @@
                 </a>
             </div>
         </footer>
+
+
+
         <script src="./js/mobile-menu.js"></script>
     </body>
 

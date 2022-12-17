@@ -1,0 +1,123 @@
+.backdrop__modal {
+  padding: 1.562rem 1.25rem 4.062rem;
+}
+
+.backdrop__contact {
+  margin-bottom: 1rem;
+}
+
+.backdrop__item {
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+
+.backdrop__address {
+  margin-bottom: 2.187rem;
+  font-style: normal;
+}
+.backdrop__text {
+  font-size: 1.25rem;
+  color: var(--sub-title);
+}
+.backdrop__link {
+  color: #616161;
+  font-size: 0.9375rem;
+}
+
+.form__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.9375rem;
+  column-gap: 1.125rem;
+  justify-content: center;
+  margin-bottom: 1.062rem;
+}
+
+.form__item {
+  position: relative;
+  flex: 1 1 calc((100% - 1.125rem) / 2);
+}
+
+.form__input {
+  background-color: inherit;
+  border: 1px solid #404040;
+  padding: 0.625rem 1rem;
+  color: var(--text);
+  width: 100%;
+
+  &:focus + .form__label,
+  &:not(:placeholder-shown) + .form__label {
+    transform: translate(0.625rem, -260%);
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--sub-title);
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(0.625rem, -50%);
+
+  color: var(--sub-title);
+  font-size: 0.687rem;
+  transition: transform 250ms ease;
+}
+
+.form__textarea {
+  resize: none;
+  width: 100%;
+  height: 12.5rem;
+  padding: 1rem 0.625rem;
+  margin-bottom: 1.875rem;
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid #404040;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--sub-title);
+  }
+
+  &::placeholder {
+    color: var(--sub-title);
+    font-size: 0.687rem;
+  }
+}
+
+.form__btn {
+  display: block;
+  padding: 0.562rem 1.5rem;
+  margin-left: auto;
+  margin-bottom: 6.25rem;
+}
+
+.backdrop__folow {
+}
+.backdrop__text-social {
+  font-size: 1.25rem;
+  color: var(--sub-title);
+  margin-bottom: 0.625rem;
+}
+.backdrop__social-list {
+}
+.backdrop__social-item {
+}
+.backdrop__social-link {
+  font-size: 0.937rem;
+  color: var(--sub-title);
+}
+
+// _____________0 - 440px____________________
+@media screen and (max-width: 440px) {
+  .form__list {
+    display: block;
+  }
+
+  .form__item {
+    margin-bottom: 14px;
+  }
+}
